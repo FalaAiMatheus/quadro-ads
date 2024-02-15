@@ -10,7 +10,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Header />
-        <main className="flex justify-center mx-auto mt-[2.6875rem] shadow-md w-full max-w-[1379px] bg-white rounded-[1.625rem]">
+        <main className="flex mx-auto mt-[2.6875rem] shadow-md w-full max-w-[1379px] bg-white rounded-[1.625rem]">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="curso" element={<Curso />} />

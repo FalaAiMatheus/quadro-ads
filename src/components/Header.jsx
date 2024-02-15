@@ -3,7 +3,7 @@ import Logo from "../assets/logo-quadro-ads.png";
 
 function Header() {
   return (
-    <header className="bg-sky-800 flex items-center justify-around p-4 font-poppins">
+    <header className="bg-sky-800 flex items-center justify-around p-4">
       <img className="max-w-96 w-full" src={Logo} alt="Logo Quadro ADS" />
       <nav>
         <ul className="flex items-center gap-9">

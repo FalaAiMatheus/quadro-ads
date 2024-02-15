@@ -1,6 +1,11 @@
 function Home() {
   return (
-    <section>Home</section>
+    <section>
+      <div>
+        <span>Hoje é: Segunda Feira</span>
+        <span>Dia: 15/02/2024</span>
+      </div>
+    </section>
   )
 }
 

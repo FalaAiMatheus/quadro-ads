@@ -1,10 +1,6 @@
 import { useState } from "react";
 
-function LessonCard() {
-  const [cadeira, setCadeira] = useState("");
-  const [professor, setProfessor] = useState("");
-  const [sala, setSala] = useState("");
-  const [horario, setHorario] = useState("");
+function LessonCard({ cadeira, professor, sala, horario }) {
   const [save, setSave] = useState(false);
 
   function handleSave() {
@@ -14,16 +10,16 @@ function LessonCard() {
   return (
     <div className="card flex justify-between items-center w-full max-w-[631px] bg-slate-200 h-36 border border-slate-400 rounded-2xl p-2">
       <div className="block">
-        <span className="font-medium text-3xl">Redes de Computadores</span>
+        <span className="font-medium text-3xl">{cadeira}</span>
         <ul className="text-xl">
           <li className="font-medium">
-            Professor: <span className="font-normal">Nauber</span>
+            Professor: <span className="font-normal">{professor}</span>
           </li>
           <li className="font-medium">
-            Sala: <span className="font-normal">205</span>
+            Sala: <span className="font-normal">{sala}</span>
           </li>
           <li className="font-medium">
-            Horário: <span className="font-normal">19:20 - 21:10</span>
+            Horário: <span className="font-normal">{horario}</span>
           </li>
         </ul>
       </div>

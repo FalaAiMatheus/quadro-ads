@@ -6,7 +6,7 @@ function Header() {
     <header className="bg-sky-800 flex items-center justify-around p-4">
       <img className="max-w-96 w-full" src={Logo} alt="Logo Quadro ADS" />
       <nav>
-        <ul className="flex items-center gap-9">
+        <ul className="flex items-center gap-9 max-md:hidden">
           <Link
             className="font-medium text-xl text-white p-3 rounded-[1.0313rem] border-transparent hover:bg-sky-900 transition"
             to="/"

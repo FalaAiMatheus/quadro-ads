@@ -7,3 +7,15 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+
+.animation {
+    transform: translateX(-20px);
+    opacity: 0;
+    animation: animation .5s forwards;
+}
+@keyframes animation {
+    to {
+        transform: initial;
+        opacity: 1;
+    }
+}

@@ -24,13 +24,8 @@ function Sobre() {
       <h2 className="font-medium text-3xl">Equipe</h2>
       <div className="h-px bg-slate-200 rounded-sm max-w-[765px]" />
       <div className="flex flex-wrap gap-6">
-        {teamData.map((data) => (
-          <PersonCard
-            key={data.id}
-            name={data.name}
-            photo={data.photo}
-            desc={data.desc}
-          />
+        {teamData.map(({ id, name, desc }) => (
+          <PersonCard key={id} name={name} desc={desc} />
         ))}
       </div>
     </section>

@@ -7,11 +7,11 @@ import styles from "./mobileMenu.module.css";
 function Header() {
   const mobile = useMedia("(max-width: 868px)");
   const [mobileMenu, setMobileMenu] = useState(false);
-  const pathname = useLocation()
+  const pathname = useLocation();
 
   useEffect(() => {
-    setMobileMenu(false)
-  },[pathname])
+    setMobileMenu(false);
+  }, [pathname]);
 
   return (
     <>
@@ -25,7 +25,13 @@ function Header() {
         ></button>
       )}
       <header className="bg-sky-800 flex items-center justify-between p-4">
-        <img className="max-w-96 w-full max-md:max-w-56" src={Logo} alt="Logo Quadro ADS" />
+        <Link to="/">
+          <img
+            className="max-w-96 w-full max-md:max-w-56"
+            src={Logo}
+            alt="Logo Quadro ADS"
+          />
+        </Link>
         <nav
           className={`${mobile ? styles.mobileNav : ""} ${
             mobileMenu && styles.mobileNavActive

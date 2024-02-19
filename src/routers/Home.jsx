@@ -6,7 +6,7 @@ function Home() {
   const actualDateDay = new Date().getDay();
   const actualDate = new Date().toLocaleDateString("pt-br");
   const [actualDay, setActualDay] = useState("");
-  const datas = data();
+  const { database } = data();
 
   useEffect(() => {
     switch (actualDateDay) {
@@ -44,7 +44,7 @@ function Home() {
       </div>
       <div className="h-px bg-slate-200 rounded-sm max-w-[765px]" />
       <div className="flex flex-col gap-4">
-        {datas.map(({ id, cadeira, professor, horario, sala }) => (
+        {database.map(({ id, cadeira, professor, horario, sala }) => (
           <LessonCard
             key={id}
             cadeira={cadeira}

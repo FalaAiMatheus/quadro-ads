@@ -1,8 +1,10 @@
 import PersonCard from "../components/Card/PersonCard";
+import data from "../data";
 
 function Sobre() {
+  const { teamData } = data();
   return (
-    <section className="p-6 w-full space-y-3 animation">
+    <section className="p-6 w-full space-y-5 animation">
       <h2 className="font-medium text-3xl">Sobre</h2>
       <div className="h-px bg-slate-200 rounded-sm max-w-[765px]" />
       <p
@@ -22,9 +24,14 @@ function Sobre() {
       <h2 className="font-medium text-3xl">Equipe</h2>
       <div className="h-px bg-slate-200 rounded-sm max-w-[765px]" />
       <div className="flex flex-wrap gap-6">
-        <PersonCard />
-        <PersonCard />
-        <PersonCard />
+        {teamData.map((data) => (
+          <PersonCard
+            key={data.id}
+            name={data.name}
+            photo={data.photo}
+            desc={data.desc}
+          />
+        ))}
       </div>
     </section>
   );

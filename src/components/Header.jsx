@@ -1,12 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../assets/logo-quadro-ads.png";
 import useMedia from "../hooks/useMedia";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./mobileMenu.module.css";
 
 function Header() {
   const mobile = useMedia("(max-width: 868px)");
   const [mobileMenu, setMobileMenu] = useState(false);
+  const pathname = useLocation()
+
+  useEffect(() => {
+    setMobileMenu(false)
+  },[pathname])
+
   return (
     <>
       {mobile && (
@@ -19,7 +25,7 @@ function Header() {
         ></button>
       )}
       <header className="bg-sky-800 flex items-center justify-between p-4">
-        <img className="max-w-96 w-full" src={Logo} alt="Logo Quadro ADS" />
+        <img className="max-w-96 w-full max-md:max-w-56" src={Logo} alt="Logo Quadro ADS" />
         <nav
           className={`${mobile ? styles.mobileNav : ""} ${
             mobileMenu && styles.mobileNavActive

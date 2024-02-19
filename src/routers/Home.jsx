@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import LessonCard from "../components/Card/LessonCard";
+import data from "../data";
 
 function Home() {
   const actualDateDay = new Date().getDay();
   const actualDate = new Date().toLocaleDateString("pt-br");
   const [actualDay, setActualDay] = useState("");
+  const datas = data();
 
   useEffect(() => {
     switch (actualDateDay) {
@@ -34,23 +36,6 @@ function Home() {
     }
   }, [actualDateDay]);
 
-  const database = [
-    {
-      id: 2,
-      cadeira: "Back end Frameworks",
-      professor: "Chico",
-      sala: 205,
-      horario: ["18:30 - 20:10"],
-    },
-    {
-      id: 6,
-      cadeira: "Projeto de banco de dados",
-      professor: "Gerhard",
-      sala: 205,
-      horario: ["20:20 - 22:00"],
-    },
-  ];
-
   return (
     <section className="p-6 w-full space-y-5 animation">
       <div className="flex flex-col font-medium gap-1">
@@ -59,12 +44,12 @@ function Home() {
       </div>
       <div className="h-px bg-slate-200 rounded-sm max-w-[765px]" />
       <div className="flex flex-col gap-4">
-        {database.map(({ id, cadeira, professor, horario, sala }) => (
+        {datas.map(({ id, cadeira, professor, horario, sala }) => (
           <LessonCard
             key={id}
             cadeira={cadeira}
             professor={professor}
-            horario={horario}
+            horario={horario.join(", ")}
             sala={sala}
           />
         ))}

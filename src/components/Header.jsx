@@ -40,32 +40,17 @@ function Header() {
           <ul
             className={`${
               mobile ? "flex flex-col" : "flex items-center gap-9"
-            }`}
+            } font-medium text-xl text-white`}
           >
-            <Link
-              className="font-medium text-xl text-white p-3 rounded-[1.0313rem] border-transparent hover:bg-sky-900 transition"
-              to="/"
-            >
-              Horários
-            </Link>
-            <Link
-              className="font-medium text-xl text-white p-3 rounded-[1.0313rem] border-transparent hover:bg-sky-900 transition"
-              to="curso"
-            >
-              Curso
-            </Link>
-            <Link
-              className="font-medium text-xl text-white p-3 rounded-[1.0313rem] border-transparent hover:bg-sky-900 transition"
-              to="sobre"
-            >
-              Sobre
-            </Link>
-            <Link
-              className="font-medium text-xl text-white p-3 rounded-[1.0313rem] border-transparent hover:bg-sky-900 transition"
-              to="salvos"
-            >
-              Salvos
-            </Link>
+            <li className="hover:bg-sky-900 transition p-3 rounded-[1.0313rem] border-transparent">
+              <Link to="/">Horários</Link>
+            </li>
+            <li className="hover:bg-sky-900 transition p-3 rounded-[1.0313rem] border-transparent">
+              <Link to="curso">Curso</Link>
+            </li>
+            <li className="hover:bg-sky-900 transition p-3 rounded-[1.0313rem] border-transparent">
+              <Link to="sobre">Sobre</Link>
+            </li>
           </ul>
         </nav>
       </header>

@@ -3,7 +3,6 @@ import Header from "./components/Header";
 import Home from "./routers/Home";
 import Curso from "./routers/Curso";
 import Sobre from "./routers/Sobre";
-import Salvos from "./routers/Salvos";
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="curso" element={<Curso />} />
             <Route path="sobre" element={<Sobre />} />
-            <Route path="salvos" element={<Salvos />} />
           </Routes>
         </main>
       </BrowserRouter>

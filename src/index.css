@@ -3,13 +3,24 @@
 @tailwind utilities;
 
 .animation {
-    transform: translateX(-20px);
-    opacity: 0;
-    animation: animation .5s forwards;
+  transform: translateX(-20px);
+  opacity: 0;
+  animation: animation 0.5s forwards;
 }
 @keyframes animation {
-    to {
-        transform: initial;
-        opacity: 1;
-    }
+  to {
+    transform: initial;
+    opacity: 1;
+  }
+}
+.dropdown {
+  transform: translateY(0);
+  opacity: 0;
+  animation: dropdown .7s forwards;
+}
+@keyframes dropdown {
+  to {
+    transform: initial;
+    opacity: 1;
+  }
 }

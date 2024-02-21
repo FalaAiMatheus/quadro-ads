@@ -3,7 +3,7 @@ import data from "../../data";
 function Teachers() {
   const { database } = data();
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2 dropdown">
       <h2 className="font-medium text-3xl">Professores</h2>
       <div className="h-px bg-slate-200 rounded-sm max-w-[765px]" />
       {database.map(({ id, professor, professorFullName }) => (

@@ -6,7 +6,7 @@ import Sobre from "./routers/Sobre";
 
 function App() {
   return (
-    <div>
+    <>
       <BrowserRouter>
         <Header />
         <main className="flex mx-auto mt-[2.6875rem] shadow-md w-full max-w-[1379px] bg-white rounded-[1.625rem]">
@@ -17,7 +17,7 @@ function App() {
           </Routes>
         </main>
       </BrowserRouter>
-    </div>
+    </>
   );
 }
 

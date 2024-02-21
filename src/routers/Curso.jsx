@@ -2,6 +2,7 @@ import { useState } from "react";
 import AboutCourse from "../components/Course/AboutCourse";
 import CourseSchedule from "../components/Course/CourseSchedule";
 import Teachers from "../components/Course/Teachers";
+import { ArrowBigDown, ArrowBigUp } from "lucide-react";
 
 function Curso() {
   const [sobreCurso, setSobreCurso] = useState(false);
@@ -16,7 +17,7 @@ function Curso() {
         <span className="font-medium text-3xl">
           Wellington Gabriel Freitas de Oliveira
         </span>
-        <span className="text-slate-400 font-normal">Coordenador do curso</span>
+        <span className="text-slate-800 font-normal">Coordenador do curso</span>
       </div>
       <h2 className="font-medium text-3xl">Sobre o curso</h2>
       <div className="h-px bg-slate-200 rounded-sm max-w-[765px]" />
@@ -24,21 +25,36 @@ function Curso() {
         <div className="flex gap-8 max-md:flex-col">
           <button
             onClick={() => setSobreCurso(!sobreCurso)}
-            className="bg-slate-200 border border-slate-400 p-2 rounded-lg text-xl font-medium hover:bg-slate-400 hover:border-blue-950 transition focus-visible:bg-slate-400 focus-visible:border-blue-950 focus-visible:outline-none"
+            className="flex items-center gap-0.5 bg-slate-200 border border-slate-400 p-2 rounded-lg text-xl font-medium hover:bg-slate-400 hover:border-blue-950 transition focus-visible:bg-slate-400 focus-visible:border-blue-950 focus-visible:outline-none"
           >
             Sobre o curso
+            {sobreCurso ? (
+              <ArrowBigUp className="size-6" />
+            ) : (
+              <ArrowBigDown className="size-6" />
+            )}
           </button>
           <button
             onClick={() => setGradeCurso(!gradeCurso)}
-            className="bg-slate-200 border border-slate-400 p-2 rounded-lg text-xl font-medium hover:bg-slate-400 hover:border-blue-950 transition focus-visible:bg-slate-400 focus-visible:border-blue-950 focus-visible:outline-none"
+            className="flex items-center gap-0.5 bg-slate-200 border border-slate-400 p-2 rounded-lg text-xl font-medium hover:bg-slate-400 hover:border-blue-950 transition focus-visible:bg-slate-400 focus-visible:border-blue-950 focus-visible:outline-none"
           >
             Grade do curso
+            {gradeCurso ? (
+              <ArrowBigUp className="size-6" />
+            ) : (
+              <ArrowBigDown className="size-6" />
+            )}
           </button>
           <button
             onClick={() => setProfessores(!professores)}
-            className="bg-slate-200 border border-slate-400 p-2 rounded-lg text-xl font-medium hover:bg-slate-400 hover:border-blue-950 transition focus-visible:bg-slate-400 focus-visible:border-blue-950 focus-visible:outline-none"
+            className="flex items-center gap-0.5 bg-slate-200 border border-slate-400 p-2 rounded-lg text-xl font-medium hover:bg-slate-400 hover:border-blue-950 transition focus-visible:bg-slate-400 focus-visible:border-blue-950 focus-visible:outline-none"
           >
             Professores
+            {professores ? (
+              <ArrowBigUp className="size-6" />
+            ) : (
+              <ArrowBigDown className="size-6" />
+            )}
           </button>
         </div>
         {sobreCurso && <AboutCourse />}

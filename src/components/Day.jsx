@@ -16,13 +16,22 @@ function Day() {
     case 1:
       //Segunda Feira
       return (
+         <>
         <LessonCard
           key={filtrarCadeira(1).map((data) => data.id)}
           cadeira={filtrarCadeira(1).map((data) => data.cadeira)}
           professor={filtrarCadeira(1).map((data) => data.professor)}
-          sala={filtrarCadeira(1).map((data) => data.sala)}
+          sala={filtrarCadeira(<1).map((data) => data.sala)}
           horario={filtrarCadeira(1).map((data) => data.horario)}
         />
+         <LessonCard
+          key={filtrarCadeira(5).map((data) => data.id)}
+          cadeira={filtrarCadeira(5).map((data) => data.cadeira)}
+          professor={filtrarCadeira(5).map((data) => data.professor)}
+          sala={filtrarCadeira(5).map((data) => data.sala)}
+          horario={filtrarCadeira(5).map((data) => data.horario)}
+        />
+      </>
       );
     case 2:
       //Terça Feira

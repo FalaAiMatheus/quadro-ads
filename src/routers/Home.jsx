@@ -1,40 +1,12 @@
-import { useEffect, useState } from "react";
-import LessonCard from "../components/Card/LessonCard";
-import data from "../data";
+import { useState } from "react";
+import useDay from "../hooks/useDay";
+import Day from "../components/Day";
 
 function Home() {
   const actualDateDay = new Date().getDay();
   const actualDate = new Date().toLocaleDateString("pt-br");
   const [actualDay, setActualDay] = useState("");
-  const { database } = data();
-
-  useEffect(() => {
-    switch (actualDateDay) {
-      case 0:
-        setActualDay("Domingo");
-        break;
-      case 1:
-        setActualDay("Segunda feira");
-        break;
-      case 2:
-        setActualDay("Terça feira");
-        break;
-      case 3:
-        setActualDay("Quarta Feira");
-        break;
-      case 4:
-        setActualDay("Quinta feira");
-        break;
-      case 5:
-        setActualDay("Sexta feira");
-        break;
-      case 6:
-        setActualDay("Sábado");
-        break;
-      default:
-        setActualDay(null);
-    }
-  }, [actualDateDay]);
+  const day = useDay({ actualDateDay, setActualDay });
 
   return (
     <section className="p-6 w-full space-y-5 animation">
@@ -44,15 +16,7 @@ function Home() {
       </div>
       <div className="h-px bg-slate-200 rounded-sm max-w-[765px]" />
       <div className="flex flex-col gap-4">
-        {database.map(({ id, cadeira, professor, horario, sala }) => (
-          <LessonCard
-            key={id}
-            cadeira={cadeira}
-            professor={professor}
-            horario={horario.join(", ")}
-            sala={sala}
-          />
-        ))}
+        <Day />
       </div>
     </section>
   );

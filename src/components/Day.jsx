@@ -12,26 +12,26 @@ function Day() {
   switch (diaAtual) {
     case 0:
       //Domingo
-      return <LessonCard key={8} cadeira={"Sem aula hoje!"} />;
+      return <p className="text-2xl font-bold text-red-700">Sem aula hoje!</p>;
     case 1:
       //Segunda Feira
       return (
-         <>
-        <LessonCard
-          key={filtrarCadeira(1).map((data) => data.id)}
-          cadeira={filtrarCadeira(1).map((data) => data.cadeira)}
-          professor={filtrarCadeira(1).map((data) => data.professor)}
-          sala={filtrarCadeira(1).map((data) => data.sala)}
-          horario={filtrarCadeira(1).map((data) => data.horario)}
-        />
-         <LessonCard
-          key={filtrarCadeira(5).map((data) => data.id)}
-          cadeira={filtrarCadeira(5).map((data) => data.cadeira)}
-          professor={filtrarCadeira(5).map((data) => data.professor)}
-          sala={filtrarCadeira(5).map((data) => data.sala)}
-          horario={filtrarCadeira(5).map((data) => data.horario)}
-        />
-      </>
+        <>
+          <LessonCard
+            key={filtrarCadeira(1).map((data) => data.id)}
+            cadeira={filtrarCadeira(1).map((data) => data.cadeira)}
+            professor={filtrarCadeira(1).map((data) => data.professor)}
+            sala={filtrarCadeira(1).map((data) => data.sala)}
+            horario={filtrarCadeira(1).map((data) => data.horario)}
+          />
+          <LessonCard
+            key={filtrarCadeira(5).map((data) => data.id)}
+            cadeira={filtrarCadeira(5).map((data) => data.cadeira)}
+            professor={filtrarCadeira(5).map((data) => data.professor)}
+            sala={filtrarCadeira(5).map((data) => data.sala)}
+            horario={filtrarCadeira(5).map((data) => data.horario)}
+          />
+        </>
       );
     case 2:
       //Terça Feira
@@ -66,7 +66,7 @@ function Day() {
       );
     case 4:
       //Quinta Feira
-      return <LessonCard key={8} cadeira={"Sem aula hoje!"} />;
+      return <p className="text-2xl font-bold text-red-700">Sem aula hoje!</p>;
     case 5:
       //Sexta Feira
       return (
@@ -89,15 +89,7 @@ function Day() {
       );
     case 6:
       //Sábado
-      return (
-        <LessonCard
-          key={filtrarCadeira(5).map((data) => data.id)}
-          cadeira={filtrarCadeira(5).map((data) => data.cadeira)}
-          professor={filtrarCadeira(5).map((data) => data.professor)}
-          sala={filtrarCadeira(5).map((data) => data.sala)}
-          horario={filtrarCadeira(5).map((data) => data.horario)}
-        />
-      );
+      return <p className="text-2xl font-bold text-red-700">Sem aula hoje!</p>;
     default:
       return <div>Erro ao obter o dia da semana.</div>;
   }

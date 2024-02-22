@@ -2,7 +2,7 @@ function data() {
   const database = [
     {
       id: 1,
-      cadeira: "Redes de computadores",
+      cadeira: "redes de computadores",
       professor: "Nauber",
       professorFullName: "Francisco Nauber Bernardo Gois",
       sala: 205,
@@ -12,7 +12,7 @@ function data() {
     },
     {
       id: 2,
-      cadeira: "Back end Frameworks",
+      cadeira: "back end frameworks",
       professor: "Chico",
       professorFullName: "Francisco Wallison Sousa do Nascimento",
       sala: 205,
@@ -22,7 +22,7 @@ function data() {
     },
     {
       id: 3,
-      cadeira: "Desenvolvimento Mobile",
+      cadeira: "desenvolvimento mobile",
       professor: "Chico",
       professorFullName: "Francisco Wallison Sousa do Nascimento",
       sala: 205,
@@ -32,7 +32,7 @@ function data() {
     },
     {
       id: 4,
-      cadeira: "Organização de Computadores",
+      cadeira: "organização de computadores",
       professor: "Janete",
       professorFullName: "Janete Pereira do Amaral",
       sala: 205,
@@ -42,7 +42,7 @@ function data() {
     },
     {
       id: 5,
-      cadeira: "Projeto de banco de dados",
+      cadeira: "projeto de banco de dados",
       professor: "Gerhard",
       professorFullName: "Gerhard Philippe de Saboia Oliveira",
       sala: 205,

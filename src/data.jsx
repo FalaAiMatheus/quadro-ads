@@ -51,16 +51,40 @@ function data() {
         "É o processo de desenvolvimento da estrutura de um banco de dados a partir das necessidades dos usuários. A estrutura deve satisfazer as necessidades de informação dos usuários de uma organização, tendo em vista um determinado conjunto de aplicações",
     },
   ];
+
   const teamData = [
     {
       id: 1,
       name: "Matheus França",
       desc: "Desenvolvedor Front End Júnior @opovoonline, atualmente cursando o terceiro semestre de ADS (Análise e Desenvolvimento de Sistemas) na UNINASSAU.",
-    }
+    },
   ];
+
+  const activities = [
+    {
+      id: 1,
+      cadeira: "organização de computadores",
+      descricao: "TRABALHO INDIVIDUAL - RESPONDER QUESTÕES",
+      atividade: "EX-OAC-GERAL",
+      dataInicial: "23/02",
+      dataVencimento: "28/02 - 18:30",
+      plataforma: "Teams",
+    },
+    {
+      id: 2,
+      cadeira: "organização de computadores",
+      descricao: "Não possui descrição",
+      atividade: "EX-OAC-ARQ-VON -NEUMANN",
+      dataInicial: "23/02",
+      dataVencimento: "28/02 - 18:30",
+      plataforma: "Teams",
+    },
+  ];
+
   return {
     database,
     teamData,
+    activities,
   };
 }
 

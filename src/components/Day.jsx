@@ -29,7 +29,7 @@ function Day() {
             cadeira={filtrarCadeira(5).map((data) => data.cadeira)}
             professor={filtrarCadeira(5).map((data) => data.professor)}
             sala={filtrarCadeira(5).map((data) => data.sala)}
-            horario={filtrarCadeira(5).map((data) => data.horario)}
+            horario={filtrarCadeira(5).map((data) => data.horario[0])}
           />
         </>
       );
@@ -83,7 +83,7 @@ function Day() {
             cadeira={filtrarCadeira(5).map((data) => data.cadeira)}
             professor={filtrarCadeira(5).map((data) => data.professor)}
             sala={filtrarCadeira(5).map((data) => data.sala)}
-            horario={filtrarCadeira(5).map((data) => data.horario)}
+            horario={filtrarCadeira(5).map((data) => data.horario[1])}
           />
         </>
       );

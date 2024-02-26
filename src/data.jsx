@@ -46,7 +46,7 @@ function data() {
       professor: "Gerhard",
       professorFullName: "Gerhard Philippe de Saboia Oliveira",
       sala: 205,
-      horario: ["Segunda: 18:30 - 19:20", "20:20 - 22:00"],
+      horario: ["18:30 - 19:20", "20:20 - 22:00"],
       descricao:
         "É o processo de desenvolvimento da estrutura de um banco de dados a partir das necessidades dos usuários. A estrutura deve satisfazer as necessidades de informação dos usuários de uma organização, tendo em vista um determinado conjunto de aplicações",
     },

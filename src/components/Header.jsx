@@ -49,6 +49,9 @@ function Header() {
               <Link to="curso">Curso</Link>
             </li>
             <li className="hover:bg-sky-900 transition p-3 rounded-[1.0313rem] border-transparent">
+              <Link to="atividades">Atividades</Link>
+            </li>
+            <li className="hover:bg-sky-900 transition p-3 rounded-[1.0313rem] border-transparent">
               <Link to="sobre">Sobre</Link>
             </li>
           </ul>

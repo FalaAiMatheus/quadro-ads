@@ -56,17 +56,7 @@ function data() {
       id: 1,
       name: "Matheus França",
       desc: "Desenvolvedor Front End Júnior @opovoonline, atualmente cursando o terceiro semestre de ADS (Análise e Desenvolvimento de Sistemas) na UNINASSAU.",
-    },
-    {
-      id: 2,
-      name: "João Pedro",
-      desc: "Analista de dados, atualmente cursando o terceiro semestre de ADS (Análise e Desenvolvimento de Sistemas) na UNINASSAU.",
-    },
-    {
-      id: 3,
-      name: "Mateus Micael",
-      desc: "Sou Mateus Micael, tenho 20 anos e sou entusiasta de qualquer forma de arte, atualmente procuro uma forma de alinhar essa minha paixão a tecnologia para levar isso como uma forma de ser bem sucedido no mercado digital.",
-    },
+    }
   ];
   return {
     database,

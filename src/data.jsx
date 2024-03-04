@@ -15,7 +15,7 @@ function data() {
       cadeira: "back end frameworks",
       professor: "Chico",
       professorFullName: "Francisco Wallison Sousa do Nascimento",
-      sala: 205,
+      sala: 604,
       horario: ["18:30 - 20:10"],
       descricao:
         "São estruturas de programação que contêm funcionalidades genéricas, ferramentas, APIs e outros componentes usados para construir o lado do servidor de um produto de software. Isso acelera o desenvolvimento, pois os programadores não precisam criar o back-end do zero",
@@ -25,7 +25,7 @@ function data() {
       cadeira: "desenvolvimento mobile",
       professor: "Chico",
       professorFullName: "Francisco Wallison Sousa do Nascimento",
-      sala: 205,
+      sala: 604,
       horario: ["20:20 - 22:00"],
       descricao:
         "Trata-se da criação de softwares direcionados para dispositivos móveis, como aplicativos de monitoramento cardíaco a bancos. O desenvolvimento mobile é um diferencial importante para a carreira no mercado de trabalho",
@@ -61,24 +61,7 @@ function data() {
   ];
 
   const activities = [
-    {
-      id: 1,
-      cadeira: "organização de computadores",
-      descricao: "TRABALHO INDIVIDUAL - RESPONDER QUESTÕES",
-      atividade: "EX-OAC-GERAL",
-      dataInicial: "23/02",
-      dataVencimento: "28/02 - 18:30",
-      plataforma: "Teams",
-    },
-    {
-      id: 2,
-      cadeira: "organização de computadores",
-      descricao: "Não possui descrição",
-      atividade: "EX-OAC-ARQ-VON -NEUMANN",
-      dataInicial: "23/02",
-      dataVencimento: "28/02 - 18:30",
-      plataforma: "Teams",
-    },
+    
   ];
 
   return {

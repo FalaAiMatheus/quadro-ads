@@ -24,13 +24,6 @@ function Day() {
             sala={filtrarCadeira(1).map((data) => data.sala)}
             horario={filtrarCadeira(1).map((data) => data.horario)}
           />
-          <LessonCard
-            key={filtrarCadeira(5).map((data) => data.id)}
-            cadeira={filtrarCadeira(5).map((data) => data.cadeira)}
-            professor={filtrarCadeira(5).map((data) => data.professor)}
-            sala={filtrarCadeira(5).map((data) => data.sala)}
-            horario={filtrarCadeira(5).map((data) => data.horario[0])}
-          />
         </>
       );
     case 2:

@@ -12,9 +12,6 @@ Esse é um projeto que visa melhorar a acessibilidade as informações do curso 
     <li>
     <strong>Visualização de Horários:</strong> Os alunos podem visualizar o quadro de horários de todas as disciplinas do curso de ADS. Os horários são apresentados de forma clara e organizada para facilitar a consulta.
     </li>
-    <li>
-    <strong>Salvar Disciplina:</strong> Os alunos podem salvar a disciplina favorita, permitindo que encontrem rapidamente as informações que precisam.
-    </li>
 </ol>
 
 ## 📦 Tecnologias usadas:
@@ -27,9 +24,7 @@ Esse é um projeto que visa melhorar a acessibilidade as informações do curso 
 ## 👷 Autores
 
 - **Matheus França** - [@MatheusFrancaDEV](https://github.com/MatheusFrancaDEV)
-- **Mateus Micael**
-- **João Pedro**
 
 ## 💡 Mais sobre
 
-- Projeto desenvolvido por 3 estudantes do 3º semestre curso de Análise e Desenvolvimento de Sistemas da UNINASSAU - Dorotéias - Fortaleza, Ceará
+- Projeto desenvolvido por um estudante do 3º semestre curso de Análise e Desenvolvimento de Sistemas da UNINASSAU - Dorotéias - Fortaleza, Ceará

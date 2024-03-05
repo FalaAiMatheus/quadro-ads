@@ -7,10 +7,7 @@ export function Sobre() {
     <section className="p-6 w-full space-y-5 animation">
       <h2 className="font-medium text-3xl">Sobre</h2>
       <div className="h-px bg-slate-200 rounded-sm max-w-[765px]" />
-      <p
-        className="max-w-[816px] text-justify text-slate-700 text-base font-medium"
-        aria-label="Um pouco sobre o projeto"
-      >
+      <p className="max-w-[816px] text-justify text-slate-700 text-base font-medium">
         Esse é um projeto que visa melhorar a acessibilidade ao quadro de
         horários do curso de ADS(Análise e Desenvolvimento de Sistemas) da
         UniNassau, campus Doroteias. Este site, construído com React e Tailwind

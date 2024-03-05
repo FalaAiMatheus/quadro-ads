@@ -35,7 +35,7 @@ export function data() {
       cadeira: "organização de computadores",
       professor: "Janete",
       professorFullName: "Janete Pereira do Amaral",
-      sala: 205,
+      sala: 605,
       horario: ["18:30 - 21:10"],
       descricao:
         "Refere-se às unidades operacionais do computador e à implementação de seus recursos de hardware. Inclui a compreensão dos módulos que compõem um sistema de computador, como eles estão interconectados e como processam e armazenam dados",
@@ -45,7 +45,7 @@ export function data() {
       cadeira: "projeto de banco de dados",
       professor: "Gerhard",
       professorFullName: "Gerhard Philippe de Saboia Oliveira",
-      sala: 205,
+      sala: 603,
       horario: ["20:20 - 22:00"],
       descricao:
         "É o processo de desenvolvimento da estrutura de um banco de dados a partir das necessidades dos usuários. A estrutura deve satisfazer as necessidades de informação dos usuários de uma organização, tendo em vista um determinado conjunto de aplicações",

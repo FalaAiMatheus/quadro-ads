@@ -5,7 +5,7 @@ import Logo from "../assets/logo-quadro-ads.png";
 import styles from "./mobileMenu.module.css";
 
 export function Header() {
-  const mobile = useMedia("(max-width: 868px)");
+  const mobile = useMedia("(max-width: 939px)");
   const [mobileMenu, setMobileMenu] = useState(false);
   const pathname = useLocation();
 
@@ -39,7 +39,7 @@ export function Header() {
         >
           <ul
             className={`${
-              mobile ? "flex flex-col" : "flex items-center gap-9"
+              mobile ? "flex flex-col " : "flex items-center gap-9"
             } font-medium text-xl text-white`}
           >
             <li className="hover:bg-sky-900 transition p-3 rounded-[1.0313rem] border-transparent">

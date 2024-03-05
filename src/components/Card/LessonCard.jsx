@@ -1,4 +1,4 @@
-function LessonCard({ cadeira, professor, sala, horario }) {
+export function LessonCard({ cadeira, professor, sala, horario }) {
   return (
     <div className="card flex justify-between items-center w-full max-w-[631px] bg-slate-200 transition border border-slate-400 rounded-2xl p-2 max-sm::flex max-sm:flex-col max-sm:gap-4">
       <div>
@@ -18,5 +18,3 @@ function LessonCard({ cadeira, professor, sala, horario }) {
     </div>
   );
 }
-
-export default LessonCard;

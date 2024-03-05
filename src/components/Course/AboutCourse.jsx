@@ -1,4 +1,4 @@
-function AboutCourse() {
+export function AboutCourse() {
   return (
     <p className="text-slate-700 max-w-[1045px] font-medium flex flex-col gap-4 dropdown">
       <p>O curso de Análise e Desenvolvimento de Sistemas (ADS) é um programa de nível superior que prepara os alunos para analisar, projetar, documentar, especificar, testar, implementar e manter sistemas computacionais e softwares.</p>
@@ -7,5 +7,3 @@ function AboutCourse() {
     </p>
   );
 }
-
-export default AboutCourse;

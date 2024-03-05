@@ -1,10 +1,10 @@
 import { useState } from "react";
-import AboutCourse from "../../components/Course/AboutCourse";
-import CourseSchedule from "../../components/Course/CourseSchedule";
-import Teachers from "../../components/Course/Teachers";
+import { AboutCourse } from "../../components/Course/AboutCourse";
+import { CourseSchedule } from "../../components/Course/CourseSchedule";
+import { Teachers } from "../../components/Course/Teachers";
 import { ArrowBigDown, ArrowBigUp } from "lucide-react";
 
-function HomeCourse() {
+export function HomeCourse() {
   const [sobreCurso, setSobreCurso] = useState(false);
   const [gradeCurso, setGradeCurso] = useState(false);
   const [professores, setProfessores] = useState(false);
@@ -64,5 +64,3 @@ function HomeCourse() {
     </section>
   );
 }
-
-export default HomeCourse;

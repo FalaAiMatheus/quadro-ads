@@ -1,4 +1,4 @@
-function data() {
+export function data() {
   const database = [
     {
       id: 1,
@@ -60,7 +60,7 @@ function data() {
     },
   ];
 
-  const activities = [];
+  const activities = [{}];
 
   return {
     database,
@@ -68,5 +68,3 @@ function data() {
     activities,
   };
 }
-
-export default data;

@@ -1,10 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
-import Logo from "../assets/logo-quadro-ads.png";
-import useMedia from "../hooks/useMedia";
+import { useMedia } from "../hooks/useMedia";
 import { useEffect, useState } from "react";
+import Logo from "../assets/logo-quadro-ads.png";
 import styles from "./mobileMenu.module.css";
 
-function Header() {
+export function Header() {
   const mobile = useMedia("(max-width: 868px)");
   const [mobileMenu, setMobileMenu] = useState(false);
   const pathname = useLocation();
@@ -60,5 +60,3 @@ function Header() {
     </>
   );
 }
-
-export default Header;

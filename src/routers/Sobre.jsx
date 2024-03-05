@@ -1,7 +1,7 @@
-import PersonCard from "../components/Card/PersonCard";
-import data from "../data";
+import { PersonCard } from "../components/Card/PersonCard";
+import { data } from "../data";
 
-function Sobre() {
+export function Sobre() {
   const { teamData } = data();
   return (
     <section className="p-6 w-full space-y-5 animation">
@@ -31,5 +31,3 @@ function Sobre() {
     </section>
   );
 }
-
-export default Sobre;

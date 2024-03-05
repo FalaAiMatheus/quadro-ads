@@ -1,4 +1,4 @@
-function PersonCard({ name, desc, photo}) {
+export function PersonCard({ name, desc, photo}) {
   return (
     <div className="card flex gap-3">
       {/* <img className="object-contain rounded-[50%] w-32 h-32" src={photo} alt="Foto de perfil" /> */}
@@ -9,5 +9,3 @@ function PersonCard({ name, desc, photo}) {
     </div>
   );
 }
-
-export default PersonCard;

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import useDay from "../hooks/useDay";
-import Day from "../components/Day";
+import { useDay } from "../hooks/useDay";
+import { Day } from "../components/Day";
 
-function Home() {
+export function Home() {
   const actualDateDay = new Date().getDay();
   const actualDate = new Date().toLocaleDateString("pt-br");
   const [actualDay, setActualDay] = useState("");
@@ -21,5 +21,3 @@ function Home() {
     </section>
   );
 }
-
-export default Home;

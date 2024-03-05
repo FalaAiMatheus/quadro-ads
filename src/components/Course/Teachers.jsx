@@ -1,6 +1,6 @@
-import data from "../../data";
+import { data } from "../../data";
 
-function Teachers() {
+export function Teachers() {
   const { database } = data();
   return (
     <div className="flex flex-col gap-2 dropdown">
@@ -17,5 +17,3 @@ function Teachers() {
     </div>
   );
 }
-
-export default Teachers;

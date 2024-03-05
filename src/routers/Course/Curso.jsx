@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import HomeCourse from "./HomeCouse";
+import { HomeCourse } from "./HomeCouse";
 
-function Curso() {
+export function Curso() {
   return (
     <>
       <Routes>

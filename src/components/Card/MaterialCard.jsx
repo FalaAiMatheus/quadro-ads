@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function MaterialCard({ children, nav }) {
+export function MaterialCard({ children, nav }) {
   return (
     <Link
       to={nav}
@@ -10,5 +10,3 @@ function MaterialCard({ children, nav }) {
     </Link>
   );
 }
-
-export default MaterialCard;

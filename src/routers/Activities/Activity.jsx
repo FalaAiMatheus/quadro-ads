@@ -1,5 +1,5 @@
 import { ActivityCard } from "../../components/Card/ActivityCard";
-import data from "../../data";
+import { data } from "../../data";
 
 export function Activity() {
   const { activities } = data();

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-function useDay({ actualDateDay, setActualDay }) {
+export function useDay({ actualDateDay, setActualDay }) {
   useEffect(() => {
     switch (actualDateDay) {
       case 0:
@@ -29,5 +29,3 @@ function useDay({ actualDateDay, setActualDay }) {
     }
   }, [actualDateDay, setActualDay]);
 }
-
-export default useDay;

@@ -1,12 +1,12 @@
-import data from "../data";
-import LessonCard from "./Card/LessonCard";
+import { data } from "../data";
+import { LessonCard } from "./Card/LessonCard";
 
 function filtrarCadeira(id) {
   const { database } = data();
   return database.filter((item) => item.id === id);
 }
 
-function Day() {
+export function Day() {
   const diaAtual = new Date().getDay();
 
   switch (diaAtual) {
@@ -87,5 +87,3 @@ function Day() {
       return <div>Erro ao obter o dia da semana.</div>;
   }
 }
-
-export default Day;

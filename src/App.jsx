@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
-import Home from "./routers/Home";
-import Curso from "./routers/Course/Curso";
-import Sobre from "./routers/Sobre";
+import { Header } from "./components/Header";
+import { Home } from "./routers/Home";
+import { Curso } from "./routers/Course/Curso";
+import { Sobre } from "./routers/Sobre";
 import { Activity } from "./routers/Activities/Activity";
 
-function App() {
+export function App() {
   return (
     <>
       <BrowserRouter>
@@ -22,5 +22,3 @@ function App() {
     </>
   );
 }
-
-export default App;
